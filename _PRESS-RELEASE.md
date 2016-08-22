@@ -17,28 +17,29 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  Mood Board
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  A tool/toy to elaborate on ideas, boost creativity, and generate references for personal projects
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  Mood Board generates a collection of photographs based on user input.
+  While you can search for tags in tumblr, instagram, or pintestest alone, Mood Board helps you collect and save inspirational photos from all over the web. Mood Board is useful for something as simple as setting an intention for the day to focusing on an idea for an art project.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  A creative user is bored, uninspired, and having difficulty moving forward with their creative project.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+	Focus on a goal by curating your own image gallery. Don't be overwhelmed by the infinite scrolling of instagram tag searches.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  "At it's core, Mood Board lets users curate a gallery. That gallery is the entire basis of their creative process."
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  Just go to moodboard.com & start generating moods!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  "Mood Board is where it's at! I use Mood Board daily to hone in on my personal aesthetic & help choose everything from clothing to plants for my garden! It's like Tumblr but less depressing!"
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+	What are you waiting for? Start generating Moods now, your life is about to get way more CURATED.
