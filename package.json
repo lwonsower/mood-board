@@ -11,5 +11,8 @@
     "board"
   ],
   "author": "lucy wonsower",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }

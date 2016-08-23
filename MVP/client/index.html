@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
-<script src='./services.js''></script>
+<doctype! html>
+<html ng-app='mbphotos'>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src='./photos/photoscontroller.js'></script>
+<script src='app.js'></script>
 <head>
 	<title>Mood Board ☾</title>
 </head>
 <body>
   <h1 class='title'>mood board</h1>
-  <div align='center'>
-  	<input class='generatemood' type='text' value='Generate Mood' name='generatemood' onclick='this.value=""'></input>
+  <div align='center' ng-controller='PhotosController'>
+  	<input class='generatemood' type='text' value='Generate Mood' ng-model='aMood' onclick='this.value=""' ng-submit='genMood(aMood)' />
+		<button ng-click='genMood(aMood)' class="submit">Go</button>
   </div>
-  <div ng-app='mb.services' ng-controller='MbPhotosController'>
+  <div ng-controller='PhotosController'>
+  	hello world
   	{{ photos }}
+  	{{ finalPhotos }}
   </div>
-  <link rel='stylesheet' href='./style/style.css'>
+  <link rel='stylesheet' href='style/style.css'>
 </body>
 </html>

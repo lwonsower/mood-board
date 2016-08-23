@@ -1,12 +1,21 @@
+var express = require("express");
+var app = express();
+var path = require("path");
 var http = require('http');
-const PORT=8080; 
+var fs = require('fs');
 
-function handleRequest(request, response){
-    response.end('It Works!! Path Hit: ' + request.url);
-}
+app.use(express.static(path.join(__dirname, '../client')))
 
-var server = http.createServer(handleRequest);
+// app.get('/api.tumblr', function(req, res){
+// 	req.body='';
+// 	req.on('data', function(chunk){
+// 		req.body += chunk;
+// 	})
+// 	res.send(JSON.parse(req.body));
+// })
 
-server.listen(PORT, function(){
-    console.log("Server listening on: http://localhost:%s", PORT);
-});
+app.listen(8080);
+
+
+
+
