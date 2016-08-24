@@ -33,11 +33,33 @@ div {
 	margin: 0 auto;
 }
 
+.image {
+	align: center;
+  height: 200px;
+  transition:0.5s linear all;
+  opacity:1;
+}
+
+.photolist {
+	align: center;
+	list-style-type: none;
+	display: inline-block;
+}
+
+.nomatches {
+	align: center;
+	color: #bfffe6;
+	font-size: 30px;
+	font-family: Georgia;
+	font-style: italic;
+}
+
 button {
 	background-color: #47d1d5;
 	font-size: 20px;
 	font-style: italic;
 	border: none;
+	outline: none;
 	height: 40px;
 	width: 40px;
 	border-radius: 15px 15px;
