@@ -16,7 +16,7 @@
   <div><br>
   <div align='center' class='nomatches' ng-if=val>no matches ¯\_(ツ)_/¯ try again</div>
   <br><br><br>
-  	<div align='center' class='photolist' ng-repeat='photo in finalPhotos'>
+  	<div align='center' class='photolist' ng-repeat='photo in finalPhotos.slice().reverse()'>
   	<span><img src='{{ photo }}' class='image' ng-click='removePhoto($index)'></span>
   	</div>
   </div>

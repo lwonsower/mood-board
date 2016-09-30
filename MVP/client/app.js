@@ -3,15 +3,6 @@ angular.module('mbservices', [
 	'ngRoute'
 	])
 
-// .config(function($routeProvider, $httpProvider){
-// 	$routeProvider
-// 		.when('/photos', {
-// 			templateUrl: 'photos/photos.html',
-// 			controller: 'PhotosController'
-// 		})
-// 		.otherwise({redirectTo: '/'})
-// })
-
 .factory('Photos', function ($http) {
   var getPhotos = function(tag){
     return $http({
