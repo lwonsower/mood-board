@@ -11,10 +11,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 
 const client = tumblr.createClient({ 
-	consumer_key: CONSUMER_KEY,
-	consumer_secret: CONSUMER_SECRET,
-	token: TOKEN,
-	token_secret: TOKEN_SECRET,
+	consumer_key: apiKeys.CONSUMER_KEY,
+	consumer_secret: apiKeys.CONSUMER_SECRET,
+	token: apiKeys.TOKEN,
+	token_secr: apiKeys.TOKEN_SECRET,
  });
 
 app.use(express.static(path.join(__dirname, '../client')));
