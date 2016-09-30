@@ -10,7 +10,12 @@ const apiKeys = require('./apiKeys');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 
-const client = tumblr.createClient(apiKeys);
+const client = tumblr.createClient({ 
+	CONSUMER_KEY: CONSUMER_KEY,
+	CONSUMER_SECRET: CONSUMER_SECRET,
+	TOKEN: TOKEN,
+	TOKEN_SECRET: TOKEN_SECRET,
+ });
 
 app.use(express.static(path.join(__dirname, '../client')));
 
