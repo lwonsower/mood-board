@@ -6,8 +6,8 @@ angular.module('mbphotos', ['mbservices'])
   $scope.genMood = function(input){
     Photos.getPhotos(input)
       .then(function(data){
-        let info = data.data.filter((item) => {
-          return item.photos;
+        let info = data.filter((item) => {
+          return data.item.photos;
         });
         let obj = info[Math.floor(Math.random() * info.length)]
         if (obj === undefined || obj === $scope.finalPhotos[$scope.finalPhotos.length-1]){
