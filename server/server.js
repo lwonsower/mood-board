@@ -5,18 +5,15 @@ const http = require('http');
 const fs = require('fs');
 const tumblr = require('tumblr.js');
 const bodyParser = require('body-parser');
-const apiKeys = require('./apiKeys');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 
-
-const client = apiKeys ? tumblr.createClient({apiKeys}) : tumblr.createClient({ 
-	consumer_key: CONSUMER_KEY,
-	consumer_secret: CONSUMER_SECRET,
-	token: TOKEN,
-	token_secret: TOKEN_SECRET,
- });
+const client = tumblr.createClient( require('./apiKeys') || 
+	{ consumer_key: process.env.CONSUMER_KEY,
+	consumer_secret: process.env.CONSUMER_SECRET,
+	token: process.env.TOKEN,
+	token_secret: process.env.TOKEN_SECRET });
 
 app.use(express.static(path.join(__dirname, '../client')));
 
