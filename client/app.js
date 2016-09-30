@@ -12,7 +12,6 @@ angular.module('mbservices', [
     })
     .then(function(resp, err){
     	if (err){ return err }
-    	console.log(resp)
       return resp;
     })
   };

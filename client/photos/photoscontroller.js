@@ -9,9 +9,8 @@ angular.module('mbphotos', ['mbservices'])
         let info = data.data.filter((item) => {
           return item.photos;
         });
-        console.log("filtered photos", info)
         let obj = info[Math.floor(Math.random() * info.length)]
-        if (obj === undefined){
+        if (obj === undefined || obj === $scope.finalPhotos[$scope.finalPhotos.length-1]){
           $scope.val = true;
           return setTimeout(function(){ $scope.val = false; }, 5000);
         }

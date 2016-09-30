@@ -10,8 +10,10 @@
 <body ng-controller='PhotosController'>
   <h1 class='title'>mood board</h1>
   <div align='center' >
+  <form>
   	<input class='generatemood' type='text' value='Generate Mood' ng-model='aMood' onclick='this.value=""' ng-submit='genMood(aMood)' />
-		<button ng-click='genMood(aMood)' class="submit">Go</button>
+		<button ng-click='genMood(aMood)' type="submit" ="submit">Go</button>
+  </form>
   </div>
   <div><br>
   <div align='center' class='nomatches' ng-if=val>no matches ¯\_(ツ)_/¯ try again</div>
