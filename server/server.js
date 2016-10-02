@@ -9,11 +9,12 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 
-const client = tumblr.createClient( require('./apiKeys') || 
-	{ consumer_key: process.env.CONSUMER_KEY,
-	consumer_secret: process.env.CONSUMER_SECRET,
-	token: process.env.TOKEN,
-	token_secret: process.env.TOKEN_SECRET });
+const client = tumblr.createClient({ 
+	consumer_key: process.env.CONSUMER_KEY || require('./apiKeys').consumer_key,
+	consumer_secret: process.env.CONSUMER_SECRET || require('./apiKeys').consumer_secret,
+	token: process.env.TOKEN || require('./apiKeys').token,
+	token_secret: process.env.TOKEN_SECRET || require('./apiKeys').token_secret,
+});
 
 app.use(express.static(path.join(__dirname, '../client')));
 
